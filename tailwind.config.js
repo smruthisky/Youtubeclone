@@ -4,8 +4,25 @@ module.exports = {
     "./src/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      scrollbarHide: {
+        '-ms-overflow-style': 'none',  /* Internet Explorer 10+ */
+        'scrollbar-width': 'none',     /* Firefox */
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-hide': {
+          '-ms-overflow-style': 'none', /* Internet Explorer 10+ */
+          'scrollbar-width': 'none',    /* Firefox */
+        },
+        '.scrollbar-hide::-webkit-scrollbar': {
+          display: 'none', /* Safari and Chrome */
+        },
+      });
+    },
+  ],
 }
 
