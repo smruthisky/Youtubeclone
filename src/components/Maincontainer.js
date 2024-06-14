@@ -3,7 +3,7 @@ import Filterbtns from './Filterbtns'
 import VideoContainer from './VideoContainer'
 const Maincontainer = () => {
   return (
-    <div>
+    <div >
        <Filterbtns/>
        <VideoContainer/>
     </div>

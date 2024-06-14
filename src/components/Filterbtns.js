@@ -13,7 +13,7 @@ const Filterbtns = () => {
   };
 
   return (
-    <div className="flex p-4 items-center ">
+    <div className="flex pl-4 items-center ">
       <button
         type="button"
         className="bg-gray-50  text-gray-400 rounded-3xl w-11 h-8 border-gray-100 hover:bg-gray-300 hover:text-white"
