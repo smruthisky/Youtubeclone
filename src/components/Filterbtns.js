@@ -16,7 +16,7 @@ const Filterbtns = () => {
     <div className="flex pl-4 items-center ">
       <button
         type="button"
-        className="bg-gray-50  text-gray-400 rounded-3xl w-11 h-8 border-gray-100 hover:bg-gray-300 hover:text-white"
+        className="bg-gray-50 mt-4 text-gray-400 rounded-3xl w-11 h-8 border-gray-100 hover:bg-gray-300 hover:text-white"
         onClick={scrollLeft}
       >
         <svg
@@ -32,7 +32,7 @@ const Filterbtns = () => {
           ></path>
         </svg>
       </button>
-      <div className="overflow-x-auto flex w-[1000px] scrollbar-hide mt-4"  ref={btnListRef}>
+      <div className="overflow-x-auto flex w-[930px] scrollbar-hide mt-4"  ref={btnListRef}>
         <Btnlist name="All" />
         <Btnlist name="Kapil show" />
         <Btnlist name="Sitcom" />
@@ -51,11 +51,11 @@ const Filterbtns = () => {
       </div>
       <button
         type="button"
-        className="bg-gray-50 text-gray-400 rounded-3xl w-11 h-8 border-gray-100 hover:bg-gray-300 hover:text-white"
+        className="bg-gray-50 mt-4 text-gray-400 rounded-3xl w-11 h-8 border-gray-100 hover:bg-gray-300 hover:text-white"
         onClick={scrollRight}
       >
         <svg
-          className="w-5 ml-3"
+          className="w-5 ml-3 "
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
