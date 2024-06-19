@@ -12,5 +12,13 @@ const Videocard = ({info}) => {
     </div>
   )
 }
-
+export const AdVideocard=({info})=>{
+// using higher order function
+return(
+  <div className='hover:opacity-5 '>
+    <p className='font-bold'>Ad</p>
+    <Videocard info={info}/>
+  </div>
+)
+}
 export default Videocard
