@@ -13,7 +13,7 @@ const Videocard = ({info}) => {
   )
 }
 export const AdVideocard=({info})=>{
-// using higher order function
+// using higher order component
 return(
   <div className='hover:opacity-5 '>
     <p className='font-bold'>Ad</p>
